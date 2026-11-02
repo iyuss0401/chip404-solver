@@ -8,15 +8,15 @@ the freshest targetNow() before being reported.
 """
 import json, os, struct, subprocess, sys, time, urllib.request
 
-WALLET = "1f0af4dcd33bbe88b62d5ad6307cfe2e9ace13ea"
+WALLET = "7b6c82c0dfabc16882674da1057f01721e686791"
 CONTRACT = "0xAB6b18C626daaDd1ff7Cc45F402141153a5a9759"
 RPCS = ["https://bsc-dataseed1.defibit.io", "https://bsc-dataseed2.defibit.io",
         "https://bsc-dataseed3.defibit.io", "https://bsc-dataseed.binance.org",
         "https://bsc-dataseed1.bnbchain.org", "https://bsc.publicnode.com",
         "https://bsc.meowrpc.com", "https://binance.llamarpc.com"]
 # Snapshot fallback (2026-11-02 06:37 WIB): weight 43, totalMinted 1758.
-SNAPSHOT = {"target": "00000000001fffffffffffffffffffffffffffffffffffffffffffffffffffff",
-            "weight": 43, "minted": 1758}
+SNAPSHOT = {"target": "00000000000fffffffffffffffffffffffffffffffffffffffffffffffffffff",
+            "weight": 44, "minted": 1859}
 OVERALL_CAP_SEC = int(os.environ.get("CHIP404_CAP_SEC", "19800"))  # 5.5 h
 EPOCH = 150
 
