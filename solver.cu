@@ -12,6 +12,7 @@
 
 typedef unsigned long long u64;
 typedef unsigned int u32;
+typedef unsigned char uchar;
 
 __device__ __forceinline__ u64 rotl64(u64 x, int y){ return (x<<y) | (x>>(64-y)); }
 
